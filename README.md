@@ -1,6 +1,6 @@
-# Breast Cancer Imaging Datasets – Hao’s Notes
+# Breast Cancer Imaging Datasets 
 
-Personal notes about breast cancer imaging datasets I use in my PhD  
+This is the summary of breast cancer imaging datasets I use in my PhD  
 (WSIs, patch–level datasets, segmentation / nuclei labels, clinical & drug–response data, etc.).
 
 Inspired by: curated lists like *Breast-Cancer-Imaging-Datasets*.
@@ -453,10 +453,12 @@ Inspired by: curated lists like *Breast-Cancer-Imaging-Datasets*.
   - Aim 1 (spatial characterization),
   - Aim 2 (gene-expression prediction from H&E),
   - Aim 3 (multimodal integration).
-- To gradually add:
-  - QC notes,
-  - preprocessing steps,
-  - train/val/test splits,
-  - mapping to foundation models (CHIEF, BEPH, THREAD, Prov-GigaPath, etc.).
+ 
+--- 
 
-> 📝 Future TODO: add a small CSV + script to generate this table automatically.
+## Contributing & Contact
+- **Contributions:**  
+  Suggestions for new datasets, updates, or corrections are welcome. Please open an issue or submit a pull request.
+
+- **Contact:**  
+  For specific dataset access, follow the provided links or contact dataset maintainers directly.  For repository-related questions or inquiries, feel free to email me at [hmfigueiras@fc.ul.pt](mailto:hao.nguyen@uq.edu.au).
