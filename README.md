@@ -461,4 +461,4 @@ Inspired by: curated lists like *Breast-Cancer-Imaging-Datasets*.
   Suggestions for new datasets, updates, or corrections are welcome. Please open an issue or submit a pull request.
 
 - **Contact:**  
-  For specific dataset access, follow the provided links or contact dataset maintainers directly.  For repository-related questions or inquiries, feel free to email me at [hmfigueiras@fc.ul.pt](mailto:hao.nguyen@uq.edu.au).
+  For specific dataset access, follow the provided links or contact dataset maintainers directly.  For repository-related questions or inquiries, feel free to email me at [hao.nguyen@uq.edu.au](mailto:hao.nguyen@uq.edu.au).
