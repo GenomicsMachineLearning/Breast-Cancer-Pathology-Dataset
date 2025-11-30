@@ -1,0 +1,30 @@
+Dataset Name,Model,Organ,Source type,Usage in study,Slides,Description,How to access,DOI,Storage dir,Task,Train/Validate
+BreakHis,BEPH,Breast,Public,,7909,"9,109 microscopic images of breast tumor tissue collected from 82 patients using different magnifying factors (40X, 100X, 200X, 400X)","http://www.inf.ufpr.br/vri/databases/BreaKHis_v1.tar.gz","https://web.inf.ufpr.br/vri/databases/breast-cancer-histopathological-database-breakhis/","/scratch/project_mnt/S0010/Hao/BreakHis",,
+ACROBAT,CHIEF,Breast,Public,Pretrain,4212,"4212 WSIs (H&E and IHC: ER, PR, HER2, KI67) from 1153 primary breast cancer patients","Portal download","https://researchdata.se/sv/catalogue/dataset/2022-190-1/1","/QRISdata/Q2051/Hao/ACROBAT","Biomarker","Validate"
+REG2025,,Breast,Public,,2143,"WSI paired with clinical report","https://reg2025.grand-challenge.org/reg2025-traindataset/",,,,
+HISTAI-breast,,Breast,Public,,1925,"HistAI breast pathology dataset (patch/WSI-level)","https://huggingface.co/datasets/histai/HISTAI-breast",,,,
+CAMELYON,BEPH,Breast,Public,,1399,"1399 whole-slide images (WSIs) of sentinel lymph node","http://gigadb.org/dataset/100439","10.5524/100439",,"Cancer","Validate"
+HTAN-BRCA,,,Public,,982,"H&E slides from Human Tumor Atlas Network breast cohort","https://humantumoratlas.org/explore?selectedFilters=%5B%7B%22value%22%3A%22Breast%22%2C%22group%22%3A%22organType%22%7D%2C%7B%22value%22%3A%22H%26E%22%2C%22group%22%3A%22assayName%22%7D%5D",,"/QRISdata/Q1851/Hao/htan",,
+TCGA-BRCA,CHIEF,Breast,Public,"Held-out validation for survival prediction",963,"3 WSIs that are labeled infiltrating duct carcinoma (767 WSIs) or lobular carcinoma (196 WSIs)","Portal download","https://portal.gdc.cancer.gov/projects/TCGA-BRCA",,"Subtype","Train"
+SPIDER-breast,,Breast,Public,,912,"Supervised dataset of image–class pairs: central 224×224 patch + 24 context patches (1120×1120 at 20X)","https://huggingface.co/datasets/histai/SPIDER-breast",,"/QRISdata/Q1851/val_data",,
+GTEx (Breast),THREAD,Breast,Public,Pretrain,894,"Normal breast histology images from GTEx","https://www.gtexportal.org/home/histologyPage",,"","Cancer","Test"
+BRACS,UNI,Breast,Public,,547,"547 labeled whole-slide images","https://www.bracs.icar.cnr.it/download/","wget –no-parent -r ftp://histoimage.na.icar.cnr.it/",,"Subtype","Test"
+TUPAC16,,Breast,Public,,500,"Breast cancer proliferation challenge dataset","https://tupac.grand-challenge.org/",,,"Biomarker","Train"
+BACH,BEPH,Breast,Public,,400,"Images categorized into four classes: normal tissue, benign lesion, in situ carcinoma, invasive carcinoma","https://iciar2018-challenge.grand-challenge.org/Dataset/",,,,
+DROID-Breast,CHIEF,Breast,Public,"Cancer cell detection validation",361,"361 H&E-stained WSIs","Email to claes.lundstrom@liu.se","10.23698/aida/drbr",,,
+Drug Response,,Breast,Public,"Train & Validate",204,"Breast cancer drug-response cohort with pathology","https://zenodo.org/records/6337925#.Y30d1y-l1Ls","https://www.nature.com/articles/s41586-021-04278-5","/QRISdata/Q1851/val_data",,
+Breast Histopathology Images,,Breast,Public,,162,"Kaggle breast histopathology image dataset","https://www.kaggle.com/datasets/paultimothymooney/breast-histopathology-images",,,,
+BCSS,,Breast,Public,,151,">20,000 segmentation annotations of tissue regions from TCGA breast","https://github.com/PathologyDataScience/BCSS",,,,
+CPTAC-BRCA,CHIEF,Breast,Public,"Tumour origin identification",134,"Primary tumour slides including 328 BRCA cases","Portal download","https://www.cancerimagingarchive.net/collection/cptac-brca/",,"Subtype","Validate"
+HEST subset,,Breast,Internal,,125,"Subset of HEST-1K used for biomarker validation",,,,"Biomarker","Validate"
+NuCLS,,Breast,Public,,124,">220,000 labeled nuclei from TCGA breast cancer images","https://sites.google.com/view/nucls/multi-rater?authuser=0",,,,
+YH-BRCA,CHIEF,Breast,"Institutional data",Pretrain,98,"Institutional BRCA cohort (details not stated)","Email to Kun-Hsing_Yu@hms.harvard.edu",,,,
+MBC,THREAD,Breast,Public,,77,"77 metastatic breast cancer patients and 99 WSIs","https://www.synapse.org/Synapse:syn59490671/wiki/628046",,,,
+BNCB,CHIEF,Breast,Public,Pretrain,58,"Core-needle biopsy WSIs from 58 patients; partial tumour annotations; clinical metadata included","https://drive.google.com/drive/folders/1HcAgplKwbSZ7ZZl2m6PZdvVF70QJmVuR",,"","Cancer","Train"
+BWH-BRCA,CHIEF,Breast,"Institutional data","Cancer cell detection",104,"104 WSIs","Email to Kun-Hsing_Yu@hms.harvard.edu",,,,
+PLCO-BRCA,CHIEF,Breast,Control,"Cancer cell detection",52,"647 WSIs from PLCO trial (control)","https://cdas.cancer.gov/datasets/plco/19/",,,,
+SMCH-BRCA,CHIEF,Breast,"Institutional data","Cancer cell detection",52,"Institutional cohort (details not stated)","Email to Kun-Hsing_Yu@hms.harvard.edu",,,,
+DFCI-BRCA,CHIEF,Breast,"Institutional data","Survival prediction",48,"48 WSIs","Email to Kun-Hsing_Yu@hms.harvard.edu",,,,
+CUCH-BRCA,CHIEF,Breast,"Institutional data","Cancer cell detection",42,"Institutional cohort (details not stated)","Email to Kun-Hsing_Yu@hms.harvard.edu",,,,
+Prov-Path 1,Prov-GigaPath,Breast,Public,,15,"Provenance path cohort 1 (GigaPath)","https://zenodo.org/records/10909922",,,,
+Prov-Path 2,Prov-GigaPath,Breast,Public,,15,"Provenance path cohort 2 (GigaPath)","https://zenodo.org/records/10909616",,,,
