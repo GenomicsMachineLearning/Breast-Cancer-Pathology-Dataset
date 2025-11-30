@@ -86,7 +86,7 @@ This is the summary of breast cancer imaging datasets I use in my PhD
 | Prov-Path 1 | Prov-GigaPath | Public | – | 15 | GigaPath cohort | [Zenodo](https://zenodo.org/records/10909922) |
 | Prov-Path 2 | Prov-GigaPath | Public | – | 15 | GigaPath cohort | [Zenodo](https://zenodo.org/records/10909616) |
 
-> ✅ You can gradually refine “Task” and “Usage in study” as your experiments become fixed.
+
 
 ---
 
