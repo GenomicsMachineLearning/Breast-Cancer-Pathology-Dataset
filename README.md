@@ -9,6 +9,13 @@ This is the summary of breast cancer imaging datasets I use in my PhD
 
 ---
 
+## Overview figures
+
+![Slides per dataset](images/pathology_slides_per_dataset.png)
+
+
+---
+
 ## Table of Contents
 
 - [Quick Overview Table](#quick-overview-table)
