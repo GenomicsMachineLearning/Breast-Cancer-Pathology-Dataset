@@ -50,7 +50,8 @@ This is the summary of breast cancer imaging datasets I use in my PhD
   - [Prov-Path 1](#prov-path-1)
   - [Prov-Path 2](#prov-path-2)
   - [DCISM](#DCISM)
-  - [SLN-Breast] (#SLN-Breast)
+  - [SLN-Breast](#SLN-Breast)
+  - [Post-NAT-BRCA](#SLN-Breast)
 
 ---
 
@@ -89,6 +90,7 @@ This is the summary of breast cancer imaging datasets I use in my PhD
 | Prov-Path 2 | Prov-GigaPath | Public | – | 15 | GigaPath cohort | [Zenodo](https://zenodo.org/records/10909616) |
 | DCISM | - | Public | Subtype | 12 | Subtype | [TCIA](https://www.cancerimagingarchive.net/collection/he-vs-mpm/) | 
 | SLN-Breast | - | Public | Cancer Detection | 130 | Classification | [TCIA](https://www.cancerimagingarchive.net/collection/sln-breast/)|
+| Post-NAT-BRCA| - | Public | Treatment Response | 64 | Cell annotation | [TCIA](https://www.cancerimagingarchive.net/collection/post-nat-brca/)|
 
 
 
@@ -305,7 +307,7 @@ This is the summary of breast cancer imaging datasets I use in my PhD
 
 ### CPTAC-BRCA
 
-- **Model / project:** CHIEF  
+- **Model / project:** Jaehnig, E.J., Fernandez-Martinez, A., Vashist, T.D., Holt, M.V., Williams, L., Lei, J.T., Moon, C.I., Kim, B.-J., Dou, Y., Zhao, H., Korchina, V., Gibbs, R.A., Muzny, D.M., Doddapaneni, H., Perou, C.M., Carey, L.A., Robles, A.I., Hyslop, T., Wen, Y., McCart, L., Krek, A., Petralia, F., Miles, G., Kavuri, S.M., Gillette, M.A., Mani, D.R., Carr, S.A., Zhang, B., Ellis, M.J., Satpathy, S. and Anurag, M. (2025) “Proteogenomic analysis of the CALGB 40601 (Alliance) HER2+ breast cancer neoadjuvant trial reveals resistance biomarkers,” Cell Reports Medicine, 6(6), p. 102154. Available at: PMID: 40480221 DOI: 10.1016/j.xcrm.2025.102154
 - **Type:** Public WSIs with multi-omics (proteomics etc.)  
 - **Size:** 134 primary tumor slides (~328 BRCA cases)  
 - **Access:** <https://www.cancerimagingarchive.net/collection/cptac-brca/>  
@@ -468,7 +470,7 @@ This is the summary of breast cancer imaging datasets I use in my PhD
   
 ---
 
-### DCISM
+### SLN-Breast
 
 - **Model / project:** Campanella, G., Hanna, M. G., Geneslaw, L., Miraflor, A., Werneck Krauss Silva, V., Busam, K. J., Brogi, E., Reuter, V. E., Klimstra, D. S., & Fuchs, T. J. (2019). Clinical-grade computational pathology using weakly supervised deep learning on whole slide images. Nature Medicine (Vol. 25, Issue 8, pp. 1301–1309). Springer Science and Business Media LLC. https://doi.org/10.1038/s41591-019-0508-1
 - **Type:** Public  
@@ -476,6 +478,20 @@ This is the summary of breast cancer imaging datasets I use in my PhD
 - **Access:** <https://www.cancerimagingarchive.net/collection/sln-breast/>
 - **Usage:** Cancer detection /Classification task
 - **My notes:**  The dataset consists of 130 de-identified whole slide images of H&E stained axillary lymph node specimens from 78 patients. Metastatic breast carcinoma is present in 36 of the WSI from 27 patients. No patient inclusion/exclusion criteria were followed. No slide inclusion/exclusion criteria were followed. The slides were scanned at Memorial Sloan Kettering Cancer Center (MSKCC) with Leica Aperio AT2 scanners at 20x equivalent magnification (0.5 microns per pixel). Together with the slides, the class label of each slide, either positive or negative for breast carcinoma, is given. The slide class label was obtained from the pathology report of the respective case.
+
+
+---
+
+### Post-NAT-BRCA
+
+- **Type:** Public segmentation dataset, Treatment Response dataset  
+- **Size:** 64 patient 
+- **Access:** <https://www.cancerimagingarchive.net/collection/post-nat-brca/>
+- **Task:** Treatment response, cell level annotation
+- **My notes:**  The Post-NAT-BRCA dataset is a collection of representative sections from breast resections in patients with residual invasive BC following NAT. Histologic sections were prepared and digitized to produce high resolution, microscopic images of treated BC tumors. Also included, are clinical features and expert pathology annotations of tumor cellularity and cell types. The Residual Cancer Burden Index (RCBi), is a clinically validated tool for assessment of response to NAT associated with prognosis. Tumor cellularity is one of the parameters used for calculating the RCBi. In this dataset, tumor cellularity refers to a measure of residual disease after NAT, in the form of proportion of malignant tumor inside the tumor bed region; also annotated. (See MD Anderson RCB Calculator for a detailed description of tumor cellularity.) Malignant, healthy, lymphocyte and other labels were also provided for individual cells to aid development of cell segmentation algorithms.
+ 
+---
+
 ## How I Use This Repo
 
 - As a **memory** of where things live on HPC.
