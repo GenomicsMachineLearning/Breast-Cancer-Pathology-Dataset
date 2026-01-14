@@ -49,6 +49,7 @@ This is the summary of breast cancer imaging datasets I use in my PhD
   - [CUCH-BRCA](#cuch-brca)
   - [Prov-Path 1](#prov-path-1)
   - [Prov-Path 2](#prov-path-2)
+  - [DCISM](#DCISM)
 
 ---
 
@@ -85,6 +86,8 @@ This is the summary of breast cancer imaging datasets I use in my PhD
 | CUCH-BRCA | CHIEF | Institutional | Cell det. | 42 | Cancer cell detection | Email: Kun-Hsing_Yu@hms.harvard.edu |
 | Prov-Path 1 | Prov-GigaPath | Public | – | 15 | GigaPath cohort | [Zenodo](https://zenodo.org/records/10909922) |
 | Prov-Path 2 | Prov-GigaPath | Public | – | 15 | GigaPath cohort | [Zenodo](https://zenodo.org/records/10909616) |
+| DCISM | - | Public | Subtype | 12 | Subtype | [TCIA](https://www.cancerimagingarchive.net/collection/he-vs-mpm/) | 
+
 
 
 
@@ -449,7 +452,17 @@ This is the summary of breast cancer imaging datasets I use in my PhD
 - **Usage:** GigaPath pretraining / evaluation  
 - **My notes:**  
   - TODO: link + compare with Prov-Path 1 (different cohort?).
+ 
+---
 
+### DCISM
+
+- **Model / project:** Prov-GigaPath  
+- **Type:** Public  
+- **Size:** 12 patients  
+- **Access:** <https://www.cancerimagingarchive.net/collection/he-vs-mpm/>
+- **Usage:** subtype detection
+- **My notes:**  Ductal carcinoma in situ with microinvasion (DCISM) is a challenging subtype of breast cancer with controversial invasiveness and prognosis. Accurate diagnosis of DCISM from ductal carcinoma in situ (DCIS) is crucial for optimal treatment and improved clinical outcomes. This dataset provides histopathology images and paired CK5/6 immunohistochemical staining images from patients with DCISM, as well as multiphoton microscopy images of suspicious regions. It offers multi-modal imaging data from various perspectives for analysis and diagnosis of microinvasive breast cancer by other researchers in the field. The dataset contains data from 12 breast cancer patients, including 10 cases of ductal carcinoma in situ with microinvasion (DCISM), 1 case of ductal carcinoma in situ (DCIS), and 1 case of invasive breast cancer. 
 ---
 
 ## How I Use This Repo
