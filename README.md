@@ -50,6 +50,7 @@ This is the summary of breast cancer imaging datasets I use in my PhD
   - [Prov-Path 1](#prov-path-1)
   - [Prov-Path 2](#prov-path-2)
   - [DCISM](#DCISM)
+  - [SLN-Breast] (#SLN-Breast)
 
 ---
 
@@ -87,6 +88,7 @@ This is the summary of breast cancer imaging datasets I use in my PhD
 | Prov-Path 1 | Prov-GigaPath | Public | – | 15 | GigaPath cohort | [Zenodo](https://zenodo.org/records/10909922) |
 | Prov-Path 2 | Prov-GigaPath | Public | – | 15 | GigaPath cohort | [Zenodo](https://zenodo.org/records/10909616) |
 | DCISM | - | Public | Subtype | 12 | Subtype | [TCIA](https://www.cancerimagingarchive.net/collection/he-vs-mpm/) | 
+| SLN-Breast | - | Public | Cancer Detection | 130 | Classification | [TCIA](https://www.cancerimagingarchive.net/collection/sln-breast/)|
 
 
 
@@ -457,14 +459,23 @@ This is the summary of breast cancer imaging datasets I use in my PhD
 
 ### DCISM
 
-- **Model / project:** Prov-GigaPath  
+- **Model / project:** Han, X., Liu, Y., Zhang, S., Li, L., Zheng, L., Qiu, L., Chen, J., Zhan, Z., Wang, S., Ma, J., Kang, D., & Chen, J. (2024). Improving the diagnosis of ductal carcinoma in situ with microinvasion without immunohistochemistry: An innovative method with H&E‐stained and multiphoton microscopy images. In International Journal of Cancer (Vol. 154, Issue 10, pp. 1802–1813). Wiley. https://doi.org/10.1002/ijc.34855
 - **Type:** Public  
 - **Size:** 12 patients  
 - **Access:** <https://www.cancerimagingarchive.net/collection/he-vs-mpm/>
 - **Usage:** subtype detection
-- **My notes:**  Ductal carcinoma in situ with microinvasion (DCISM) is a challenging subtype of breast cancer with controversial invasiveness and prognosis. Accurate diagnosis of DCISM from ductal carcinoma in situ (DCIS) is crucial for optimal treatment and improved clinical outcomes. This dataset provides histopathology images and paired CK5/6 immunohistochemical staining images from patients with DCISM, as well as multiphoton microscopy images of suspicious regions. It offers multi-modal imaging data from various perspectives for analysis and diagnosis of microinvasive breast cancer by other researchers in the field. The dataset contains data from 12 breast cancer patients, including 10 cases of ductal carcinoma in situ with microinvasion (DCISM), 1 case of ductal carcinoma in situ (DCIS), and 1 case of invasive breast cancer. 
+- **My notes:**  Ductal carcinoma in situ with microinvasion (DCISM) is a challenging subtype of breast cancer with controversial invasiveness and prognosis. Accurate diagnosis of DCISM from ductal carcinoma in situ (DCIS) is crucial for optimal treatment and improved clinical outcomes. This dataset provides histopathology images and paired CK5/6 immunohistochemical staining images from patients with DCISM, as well as multiphoton microscopy images of suspicious regions. It offers multi-modal imaging data from various perspectives for analysis and diagnosis of microinvasive breast cancer by other researchers in the field. The dataset contains data from 12 breast cancer patients, including 10 cases of ductal carcinoma in situ with microinvasion (DCISM), 1 case of ductal carcinoma in situ (DCIS), and 1 case of invasive breast cancer.
+  
 ---
 
+### DCISM
+
+- **Model / project:** Campanella, G., Hanna, M. G., Geneslaw, L., Miraflor, A., Werneck Krauss Silva, V., Busam, K. J., Brogi, E., Reuter, V. E., Klimstra, D. S., & Fuchs, T. J. (2019). Clinical-grade computational pathology using weakly supervised deep learning on whole slide images. Nature Medicine (Vol. 25, Issue 8, pp. 1301–1309). Springer Science and Business Media LLC. https://doi.org/10.1038/s41591-019-0508-1
+- **Type:** Public  
+- **Size:** 130 patients  
+- **Access:** <https://www.cancerimagingarchive.net/collection/sln-breast/>
+- **Usage:** Cancer detection /Classification task
+- **My notes:**  The dataset consists of 130 de-identified whole slide images of H&E stained axillary lymph node specimens from 78 patients. Metastatic breast carcinoma is present in 36 of the WSI from 27 patients. No patient inclusion/exclusion criteria were followed. No slide inclusion/exclusion criteria were followed. The slides were scanned at Memorial Sloan Kettering Cancer Center (MSKCC) with Leica Aperio AT2 scanners at 20x equivalent magnification (0.5 microns per pixel). Together with the slides, the class label of each slide, either positive or negative for breast carcinoma, is given. The slide class label was obtained from the pathology report of the respective case.
 ## How I Use This Repo
 
 - As a **memory** of where things live on HPC.
