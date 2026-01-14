@@ -28,3 +28,4 @@ DFCI-BRCA,CHIEF,Breast,"Institutional data","Survival prediction",48,"48 WSIs","
 CUCH-BRCA,CHIEF,Breast,"Institutional data","Cancer cell detection",42,"Institutional cohort (details not stated)","Email to Kun-Hsing_Yu@hms.harvard.edu",,,,
 Prov-Path 1,Prov-GigaPath,Breast,Public,,15,"Provenance path cohort 1 (GigaPath)","https://zenodo.org/records/10909922",,,,
 Prov-Path 2,Prov-GigaPath,Breast,Public,,15,"Provenance path cohort 2 (GigaPath)","https://zenodo.org/records/10909616",,,,
+DCISM,,Breast,Public,Subtype,12, histopathology images and paired CK5/6 immunohistochemical staining images from patients with DCISM, as well as multiphoton microscopy images of suspicious regions, https://www.cancerimagingarchive.net/collection/he-vs-mpm/, https://doi.org/10.7937/3FYC-AC78, , , ,
