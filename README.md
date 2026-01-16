@@ -52,6 +52,10 @@ This is the summary of breast cancer imaging datasets I use in my PhD
   - [DCISM](#DCISM)
   - [SLN-Breast](#SLN-Breast)
   - [Post-NAT-BRCA](#SLN-Breast)
+  - [TheuRes_Stephen2021](#TheuRes_Stephen2021)
+  - [HER2_Tumor_ROIs](#HER2_Tumor_ROIs)
+  - [HistologyHSI-BC-Recurrence](#HistologyHSI-BC-Recurrence)
+  - [AURORA-Metastatic-Breast-Multiomics](#AURORA-Metastatic-Breast-Multiomics)
 
 ---
 
@@ -91,6 +95,11 @@ This is the summary of breast cancer imaging datasets I use in my PhD
 | DCISM | - | Public | Subtype | 12 | Subtype | [TCIA](https://www.cancerimagingarchive.net/collection/he-vs-mpm/) | 
 | SLN-Breast | - | Public | Cancer Detection | 130 | Classification | [TCIA](https://www.cancerimagingarchive.net/collection/sln-breast/)|
 | Post-NAT-BRCA| - | Public | Treatment Response | 64 | Cell annotation | [TCIA](https://www.cancerimagingarchive.net/collection/post-nat-brca/)|
+| TheuRes_Stephen2021 | [NAT-ML](https://github.com/micrisor/NAT-ML) | Public | Treatment Response | 168 | Multiomic + Treat | [Zenodo](https://zenodo.org/records/6337925#.Y30d1y-l1Ls) |
+| HER2_Tumor_ROIs | [CNN](https://www.modernpathology.org/article/S0893-3952(22)00349-0/fulltext) | Public | Treatment Response | 273 | Histo + Cli + Molecular test | [TCIA](https://www.cancerimagingarchive.net/collection/her2-tumor-rois/) | 
+| HistologyHSI-BC-Recurrence | - | Pulic | Recurrence Prediction | 47 | WSI + Hyperspectral + Cli | [TCIA](https://www.cancerimagingarchive.net/collection/histologyhsi-bc-recurrence/)
+| AURORA-Metastatic-Breast-Multiomics | - | Public | Metastatic vs Primary | 55 | WSI + IHC + Cli + Omics | [TCIA](https://www.cancerimagingarchive.net/collection/aurora-metastatic-breast-multiomics/)
+
 
 
 
@@ -491,6 +500,71 @@ This is the summary of breast cancer imaging datasets I use in my PhD
 - **My notes:**  The Post-NAT-BRCA dataset is a collection of representative sections from breast resections in patients with residual invasive BC following NAT. Histologic sections were prepared and digitized to produce high resolution, microscopic images of treated BC tumors. Also included, are clinical features and expert pathology annotations of tumor cellularity and cell types. The Residual Cancer Burden Index (RCBi), is a clinically validated tool for assessment of response to NAT associated with prognosis. Tumor cellularity is one of the parameters used for calculating the RCBi. In this dataset, tumor cellularity refers to a measure of residual disease after NAT, in the form of proportion of malignant tumor inside the tumor bed region; also annotated. (See MD Anderson RCB Calculator for a detailed description of tumor cellularity.) Malignant, healthy, lymphocyte and other labels were also provided for individual cells to aid development of cell segmentation algorithms.
  
 ---
+### TheuRes_Stephen2021
+
+- **Model / project:** NAT-ML
+- **Type:** Public, whole exome sequencing (mutation), shallow WGS (copy no), RNA seq (GE), digital pathology (tissue img)
+- **Size:** 168 
+- **My notes:**  
+  - TODO: can be used for aim 3
+  - genomic data here <https://github.com/cclab-brca/neoadjuvant-therapy-response-predictor/tree/master#>
+  - paper <https://www.nature.com/articles/s41586-021-04278-5>
+
+---
+### HER2_Tumor_ROIs
+
+- **Model / project:** NAT-ML
+- **Type:** Histopathology, Whole Slide Image, Follow-Up, Molecular Test, Measurement
+- **Size:** 273
+- **My notes:**  
+  - TODO: can be used for aim 3
+  - HER2+ Breast Cancer, Metastatic disease 
+
+---
+
+### HistologyHSI-BC-Recurrence
+
+- **Model / project:** HistologyHSI-BC-Recurrence
+- **Type:** Whole Slide Image, Hyperspectral, Follow-Up, Pathology Detail, Other, Demographic, 12 year follow up recurrence
+- Multimodal data has emerged as a promising tool to integrate diverse information, offering a more comprehensive perspective. This study introduces the HistologyHSI-BC-Recurrence Database, the first publicly accessible multimodal dataset designed to advance distant recurrence prediction in breast cancer (BC). The dataset comprises 47 histopathological whole-slide images (WSIs), 677 hyperspectral (HS) images, and demographic and clinical data from 47 BC patients, of whom 22 (47%) experienced distant recurrence over a 12-year follow-up. Histopathological slides were digitized using a WSI scanner and annotated by expert pathologists, while HS images were acquired with a bright-field microscope and a HS camera. This dataset provides a promising resource for BC recurrence prediction and personalized treatment strategies by integrating histopathological WSIs, HS images, and demographic and clinical data.
+- **Size:** 47
+- **My notes:**  
+  - TODO: can be used for aim 3
+  - Ductal Carcinoma, Breast Invasive Carcinoma
+
+
+---
+
+### AURORA-Metastatic-Breast-Multiomics
+
+- **Model / project:** Multiomics in primary and metastatic breast tumors from the AURORA US network finds microenvironment and epigenetic drivers of metastasis
+- **Type:** Histopathology, Pathology Detail, Other, Immunofluorescence, Whole Slide Image
+- In the retrospective phase, 55 patients with 31 primary tissues and 102 metastases were profiled using whole genome DNA sequencing, whole exome DNA sequencing, DNA methylation arrays, and RNA sequencing. The related molecular data are hosted in dbGaP and GEO. H&E slides are available for 184 specimens (17 samples have 2 images, 12 have 3 images).  H&E were performed on 53 primary breast cancer tissues, 99 metastatic samples, and 32 adjacent normal tissues. HLA-A immunofluorescence was performed on 37 samples.  
+- **Size:** 55
+- **My notes:**  
+  - TODO: can be used for aim 3
+  - Pri vs Meta
+  - Paper <https://doi.org/10.1038/s43018-022-00491-x>
+
+
+
+---
+### CMB-BRCA 
+
+- **Model / project:** Cancer Moonshot Biobank - Invasive Breast Carcinoma Cancer Collection
+- **Type:**	Histopathology, Whole Slide Image, MR, CT, MG, PT, US
+- IDuring the course of this study, biospecimens (blood and tissue removed during medical procedures) and associated data will be collected longitudinally from at least 1000 patients across at least 10 cancer types, who are receiving standard of care cancer treatment at multiple NCI Community Oncology Research Program (NCORP) sites. This collection contains de-identified radiology and histopathology imaging procured from subjects in NCI’s Cancer Moonshot Biobank - Invasive Breast Carcinoma Cancer (CMB-BRCA) cohort. Associated genomic, phenotypic and clinical data will be hosted by The Database of Genotypes and Phenotypes (dbGaP) and other NCI databases.  A summary of Cancer Moonshot Biobank imaging efforts can be found on the Cancer Moonshot Biobank Imaging page.
+- **Size:** 97
+- **My notes:**  
+  - TODO: can be used for aim 3
+  - Breast Invasive Carcinoma
+  - need to request genomic data
+Cancer Moonshot Biobank. (2024). Cancer Moonshot Biobank – Invasive Breast Carcinoma Cancer Collection (CMB-BRCA) (Version 4) [dataset]. The Cancer Imaging Archive. https://doi.org/10.7937/dx22-8j71
+
+
+
+---
+
 
 ## How I Use This Repo
 
