@@ -2,7 +2,7 @@
 
 This is the summary of breast cancer imaging datasets I use in my PhD  
 (WSIs, patch–level datasets, segmentation / nuclei labels, clinical & drug–response data, etc.).
-
+For TNBC find here https://github.com/haonguyenthai/SpatialTransciptomics_BC_TNBC
 
 > ⚠️ This is **not** a redistributable dataset repo.  
 > Links point to the original sources. Local paths are specific to my HPC (QRISdata / scratch).
