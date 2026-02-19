@@ -56,6 +56,7 @@ For TNBC find here https://github.com/haonguyenthai/SpatialTransciptomics_BC_TNB
   - [HER2_Tumor_ROIs](#HER2_Tumor_ROIs)
   - [HistologyHSI-BC-Recurrence](#HistologyHSI-BC-Recurrence)
   - [AURORA-Metastatic-Breast-Multiomics](#AURORA-Metastatic-Breast-Multiomics)
+  - [Spatial transcriptomics reveals tumor microenvironment–driven subtypes of invasive lobular carcinoma](#TME_ILC)
 
 ---
 
@@ -99,6 +100,7 @@ For TNBC find here https://github.com/haonguyenthai/SpatialTransciptomics_BC_TNB
 | HER2_Tumor_ROIs | [CNN](https://www.modernpathology.org/article/S0893-3952(22)00349-0/fulltext) | Public | Treatment Response | 273 | Histo + Cli + Molecular test | [TCIA](https://www.cancerimagingarchive.net/collection/her2-tumor-rois/) | 
 | HistologyHSI-BC-Recurrence | - | Pulic | Recurrence Prediction | 47 | WSI + Hyperspectral + Cli | [TCIA](https://www.cancerimagingarchive.net/collection/histologyhsi-bc-recurrence/)
 | AURORA-Metastatic-Breast-Multiomics | - | Public | Metastatic vs Primary | 55 | WSI + IHC + Cli + Omics | [TCIA](https://www.cancerimagingarchive.net/collection/aurora-metastatic-breast-multiomics/)
+| TME_ILC | - | Public | ILC | Classification of ILC | 41 | Classification and survival prediction | [Zenodo](https://zenodo.org/records/14924871) |
 
 
 
@@ -561,6 +563,23 @@ For TNBC find here https://github.com/haonguyenthai/SpatialTransciptomics_BC_TNB
   - need to request genomic data
 Cancer Moonshot Biobank. (2024). Cancer Moonshot Biobank – Invasive Breast Carcinoma Cancer Collection (CMB-BRCA) (Version 4) [dataset]. The Cancer Imaging Archive. https://doi.org/10.7937/dx22-8j71
 
+
+
+---
+
+### TME_ILC
+
+- **Model / project:** Spatial transcriptomics-derived TME classification of invasive lobular carcinoma
+- **Type:** Spatial Transcriptomics (Visium 10x Genomics), H&E morphology, single-cell deconvolution, bulk RNA-seq validation
+- Spatial transcriptomics performed on 43 HR+/HER2− primary ILC frozen surgical samples with detailed morphological annotation and long-term clinical follow-up (median 12.1 years RFI). Integrative NMF of gene expression, morphology, and spatial co-occurrence metrics identified four TME-based subtypes (ILC4TME): normal/stroma-enriched (NSE), proliferative (P), androgen receptor-enriched (ARE), and metabolic/immune-enriched (MIE). Gene signatures enabled subtype assignment in bulk data, validated in SCAN-B (n=853) and METABRIC (n=122). ILC4TME retained prognostic value beyond established signatures (ROR, Oncotype DX, GGI, EndoPredict, MammaPrint, LobSig) in multivariable models. P subtype linked to poor prognosis; NSE to favorable outcomes.
+- **Size:** 43 (ST discovery), 853 (SCAN-B validation), 122 (METABRIC validation)
+- **My notes:**  
+  - Contains data with STutility RDS objects, Spaceranger outputs, Morphological Annotations (pathologist), H&E images and gene markers.
+  - Key subtypes: NSE (stroma/CAFs, favorable prognosis), P (proliferative, poor prognosis), ARE (androgen receptor, novel), MIE (M2 macrophages/adipocytes/metabolic)
+    - Data available: FASTQ at EGA (EGAD50000001467), code/signatures at GitHub (https://github.com/BCTL-Bordet/ILC-Spatial-Transcriptomics), processed data at Zenodo (https://zenodo.org/records/14924871)
+    - Gene signatures (50–100 genes per subtype) can classify from bulk RNA-seq
+    - MIE and NSE enriched in ILC vs NST; P enriched in NST
+Serra, M., Rediti, M., Collet, L., et al. (2026). Spatial transcriptomics reveals tumor microenvironment–driven subtypes of invasive lobular carcinoma. *PNAS*, 123(6), e2517567123. https://doi.org/10.1073/pnas.2517567123
 
 
 ---
