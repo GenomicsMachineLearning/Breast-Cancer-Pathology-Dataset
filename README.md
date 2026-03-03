@@ -57,6 +57,7 @@ For TNBC find here https://github.com/haonguyenthai/SpatialTransciptomics_BC_TNB
   - [HistologyHSI-BC-Recurrence](#HistologyHSI-BC-Recurrence)
   - [AURORA-Metastatic-Breast-Multiomics](#AURORA-Metastatic-Breast-Multiomics)
   - [Spatial transcriptomics reveals tumor microenvironment–driven subtypes of invasive lobular carcinoma](#TME_ILC)
+  - [Computational pathology annotation enhances the resolution and interpretation of breast cancer spatial transcriptomics data](#Comp_Pathology)
 
 ---
 
@@ -580,6 +581,24 @@ Cancer Moonshot Biobank. (2024). Cancer Moonshot Biobank – Invasive Breast Car
     - Gene signatures (50–100 genes per subtype) can classify from bulk RNA-seq
     - MIE and NSE enriched in ILC vs NST; P enriched in NST
 Serra, M., Rediti, M., Collet, L., et al. (2026). Spatial transcriptomics reveals tumor microenvironment–driven subtypes of invasive lobular carcinoma. *PNAS*, 123(6), e2517567123. https://doi.org/10.1073/pnas.2517567123
+
+
+---
+
+### Comp_Pathology
+
+- **Model / project:** Computational pathology annotation enhances the resolution and interpretation of breast cancer spatial transcriptomics data
+- **Type:** Spatial Transcriptomics (Visium 10x Genomics), H&E computational pathology (QuPath, random trees object classifier), single-cell deconvolution benchmarking
+- CTA pipeline applied to 23 Visium-assayed frozen breast tumor sections from 4 patients (1 TNBC, 3 HER2+), providing single-cell resolution annotation of tumor, immune, and stroma compartments on paired H&E images. CTA used to: (1) benchmark 7 deconvolution methods (Cell2location, RCTD, and Stereoscope outperformed via Spearman correlation); (2) refine GEX clustering annotation; (3) improve spatial inferCNV by defining germline reference and tumor purity cutoffs; (4) support spatially resolved PAM50 intrinsic subtyping via AIMS; (5) enhance visualization of B/T cell clones from Spatial VDJ data. Validated against Xenium FFPE data using cell-type marker co-expression.
+- **Size:** 23 sections (4 patients)
+- **My notes:**  
+  - CTA annotations: tumor (red), immune (yellow), stroma (blue); pathologist annotations also include DCIS, necrosis, blood vessels
+  - Pipeline runs in QuPath (v0.5.1) with random trees classifier; features listed in Supplementary Data 1
+  - Best deconvolution methods for this dataset: Cell2location, RCTD, Stereoscope (median Spearman >0.65 for tumor)
+  - Increasing tumor purity threshold (50→70→90%) via CTA substantially improved CNV clone separation
+  - TNBC (BCSA1): 53% basal-like, 36% NBL, 11% HER2-enriched by spatial subtyping — notable as IHC was HER2-negative
+    - Data available: Swedish National Data Service (DORIS) - https://doi.org/10.48723/f4v5-m008
+Li, T., Yang, Q., Acs, B. et al. Computational pathology annotation enhances the resolution and interpretation of breast cancer spatial transcriptomics data. npj Precis. Onc. 9, 310 (2025). https://doi.org/10.1038/s41698-025-01104-3
 
 
 ---
